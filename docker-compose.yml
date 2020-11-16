@@ -1,0 +1,26 @@
+version: '3'
+service:
+  client:
+    build: .
+    ports:
+      - 3000:3000
+  posts:
+    build: .
+    ports:
+      - 4000:4000
+  comments:
+    build: .
+    ports:
+      - 4001:4001
+  query:
+    build: .
+    ports:
+      - 4002:4002
+  moderation:
+    build: .
+    ports:
+      - 4003:4003
+  event-bus:
+    build: .
+    ports:
+      - 4005:4005
